@@ -75,15 +75,11 @@ fs.readFile('config.json', (err, content) => {
   if (err) return console.log('Error loading config.js file:', err);
 
   const config = JSON.parse(content);
-  const { calendarId } = config;
+  const { calendarId, street } = config;
 
   request.get(
     {
-      url: 'https://web5.karlsruhe.de/service/abfall/akal/akal.php?strasse=SENGESTRAßE',
-      // formData: {
-      //   strasse: 131,
-      //   anzeigen: 'anzeigen',
-      // },
+      url: `https://web5.karlsruhe.de/service/abfall/akal/akal.php?strasse=${street}`,
     },
     handleResponse(calendarId),
   );
