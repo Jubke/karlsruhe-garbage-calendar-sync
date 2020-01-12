@@ -1,0 +1,38 @@
+{
+  "name": "karlsruhe-garbage-calendar-sync",
+  "version": "1.0.0",
+  "description": "Little script to syncs the garbage calendar from the Karlsruhe city website to a Google calendar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jubke/karlsruhe-garbage-calendar-sync.git"
+  },
+  "keywords": [
+    "Karlsruhe",
+    "Google",
+    "Calendar",
+    "Garbage"
+  ],
+  "author": "Julian Lübke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jubke/karlsruhe-garbage-calendar-sync/issues"
+  },
+  "homepage": "https://github.com/Jubke/karlsruhe-garbage-calendar-sync#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0"
+  },
+  "dependencies": {
+    "googleapis": "^39.2.0",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
+    "node-html-parser": "^1.1.17",
+    "p-queue": "^6.2.1",
+    "request": "^2.88.0"
+  }
+}
