@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>karlsruhe-garbage-calendar-sync</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>node</string>
+        <string>index.js</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Minute</key>
+        <integer>0</integer>
+        <key>Hour</key>
+        <integer>20</integer>
+        <key>Weekday</key>
+        <integer>1</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/var/log/app/karlsruhe-garbage-calendar-sync.log</string>
+    <key>StandardErrorPath</key>
+    <string>/var/log/app/karlsruhe-garbage-calendar-sync.log</string>
+    <key>UserName</key>
+    <string>julianluebke</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/julianluebke/Development/karlsruhe-garbage-calendar-sync</string>
+</dict>
+</plist>
