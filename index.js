@@ -55,11 +55,10 @@ function handleResponse(calendarId) {
                   `Adding task to create new event for ${title} on ${date}.`
                 );
                 queue.add(() => {
-                  callApi(createEvent(calendarId, title, description, date)).then((event) => {
-                    console.log(event);
-                  }).then(() => {
-                    console.log(`Created new event for ${title} on ${date}.`);
-                  });
+                  callApi(createEvent(calendarId, title, description, date))
+                    .then(() => {
+                      console.log(`Created new event for ${title} on ${date}.`);
+                    });
                 });
               }
             });
