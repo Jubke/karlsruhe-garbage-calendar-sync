@@ -74,11 +74,11 @@ fs.readFile('config.json', (err, content) => {
   if (err) return console.log('Error loading config.js file:', err);
 
   const config = JSON.parse(content);
-  const { calendarId, street } = config;
+  const { calendarId, street, number } = config;
 
   request.get(
     {
-      url: `https://web5.karlsruhe.de/service/abfall/akal/akal.php?strasse=${street}`,
+      url: `https://web6.karlsruhe.de/service/abfall/akal/akal.php?strasse=${street}&hausnr=${number}`,
     },
     handleResponse(calendarId),
   );
